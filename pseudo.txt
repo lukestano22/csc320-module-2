@@ -1,0 +1,23 @@
+1. Create a map called taxBracket:
+    - "lowest"  → 500
+    - "middle"  → 1500
+    - "large"   → 2500
+
+2. Prompt user: "Enter your weekly income"
+3. Read weeklyPay as a decimal number
+
+4. IF weeklyPay < taxBracket["lowest"]
+       taxRate = 0.10
+   ELSE IF weeklyPay < taxBracket["middle"]
+       taxRate = 0.15
+   ELSE IF weeklyPay < taxBracket["large"]
+       taxRate = 0.20
+   ELSE
+       taxRate = 0.30
+
+
+5. Calculate postTax = weeklyPay - taxAmount
+
+6. Display:
+    - "Your tax rate is: " + (taxRate * 100) + "%"
+    - "Your total paycheck will be: $" + postTax formatted to 2 decimals
